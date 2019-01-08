@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory game </title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="container">
+    <div id="startOptions" class="start-options">
+        <h1>Memory game</h1>
+        <label>
+            Difficult level:
+        </label>
+        <select id="levelDifficult" class="form-control form-control-lg">
+            <option value="4">easy</option>
+            <option value="6">medium</option>
+            <option value="8">hard</option>
+            <option value="10">expert</option>
+        </select>
+        <button id="startBtn" type="button" class="btn btn-success btn-lg btn-start" onclick="game">Start</button>
+    </div>
+    <div id="gameWrapper" class="game-wrapper d-none">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="stats-wrapper">
+                    <div id="stats-level" class="property level">
+                        <span class="lbl">Level:</span>
+                        <span id="levelName" class="value">-</span>
+                    </div>
+                    <div id="stats-time" class="property time">
+                        <span class="lbl">Time:</span>
+                        <span id="timeValue" class="value">00:00:00</span>
+                    </div>
+                    <div class="property errors">
+                        <span class="lbl">Errors: </span>
+                        <span id="errorsValue" class="value">-</span>
+                    </div>
+                    <div id="stats-points" class="property points">
+                        <span class="lbl">Points: </span>
+                        <span id="pointsValue" class="value">-</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="boardWrapper" class="board-wrapper">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="start-counter-wrapper">
+                            <span id="starterCountdown" class="value">5</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="endScreen" class="d-none">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="summary">
+                    <h1>Win!</h1>
+                    <h3>Your stats:</h3>
+                    <p><span>Level: </span><span id="endLevelValue"></span></p>
+                    <p><span>Time: </span><span id="endTimeValue"></span></p>
+                    <p><span>Errors: </span><span id="endErrorsValue"></span></p>
+                    <p><span>Points: </span><span id="endPointsValue"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

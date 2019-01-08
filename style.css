@@ -1,0 +1,59 @@
+body{
+    background-color: #fefefe;
+}
+.start-options{
+    width: 400px;
+    margin: 100px auto;
+    text-align: center;
+}
+.btn-start{
+    margin-top: 30px;
+}
+.board-wrapper{
+
+}
+.board-wrapper table{
+    margin: 50px auto;
+}
+
+.board-wrapper{
+
+}
+
+.board-wrapper tr td{
+    border: 1px solid gray;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+}
+.stats-wrapper{
+    margin-top: 50px;
+}
+
+.stats-wrapper .property{
+    font-size: 24px;
+}
+
+.stats-wrapper .property .lbl{
+
+}
+.stats-wrapper .property .value{
+    font-weight: bold;
+}
+.summary{
+    margin-top: 50px;
+    text-align: center;
+}
+.start-counter-wrapper{
+    text-align: center;
+}
+#starterCountdown{
+    font-size: 42px;
+    padding: 15px 30px;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+}
