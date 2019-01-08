@@ -1,7 +1,3 @@
-/**
- * Created by Krzysiek on 2018-12-13.
- */
-
 function init() {
     var startBtn = document.getElementById("startBtn");
     startBtn.onclick = function () {
